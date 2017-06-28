@@ -1,0 +1,53 @@
+body {
+
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	height: 55px;
+}
+
+header > div {
+	flex: 1 1 auto;
+}
+
+header img {
+	max-height: 30px;
+}
+
+#sub {
+	
+}
+
+#sub a {
+	font-size: 1.2em;
+	font-family: "Helvetica Neue",Helvetica,Arial,"FreeSans",sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	background-color: #FDC828;
+	color: #383F4E;
+	padding: 8px 12px;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+#content {
+
+}
+
+#main_info {
+
+}
+
+#second_info {
+
+}
+
+#other_info {
+
+}
+
+footer {
+
+}
