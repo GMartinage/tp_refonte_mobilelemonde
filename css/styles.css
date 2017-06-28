@@ -1,51 +1,109 @@
-body {
-
+* {
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	padding: 0;
+	color: #222;
+	line-height: 21px;
 }
 
 header {
-	display: flex;
-	justify-content: space-around;
-	height: 55px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 21px;
+	background-color: #fcfcfd;
+	border-bottom: 1px solid #e8eaee;
 }
 
-header > div {
+#placeholder {
+	position: relative;
+	height: 60px;
+}
+
+/*nav > div {
+	display: inline-flex;
+	background-color: #fcfcfd;
+	width: 100%;
+	border-bottom: 1px solid #e8eaee;
+	padding: 21px;
+	background-color: #fefefd;
+}
+
+nav > div > a {
 	flex: 1 1 auto;
+	padding-top: 1.3em;
+}*/
+
+#nav_left {
+	display: block;
+	position: relative;
+	width: 50%;
+	float: left;
+	text-align: left;
 }
 
-header img {
-	max-height: 30px;
+#nav_left img {
+	float: left;
 }
 
-#sub {
-	
+#menu {
+	width: 30px;
 }
 
-#sub a {
-	font-size: 1.2em;
-	font-family: "Helvetica Neue",Helvetica,Arial,"FreeSans",sans-serif;
-	font-weight: 700;
+#logo {
+	width: 110px;
+}
+
+#nav_right {
+	display: block;
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+
+/*#menu {
+	background-image: url(../img/menu_hamburger.svg);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: left center;
+}
+
+#logo {
+	width: 55px;
+	background-image: url(../img/logo_le_monde.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#subscribe {
+	width: 70px;
+	position: relative;
 	text-decoration: none;
-	background-color: #FDC828;
-	color: #383F4E;
-	padding: 8px 12px;
+	border: 1px solid black;
+}*/
+
+#nav_right p {
+	position: absolute;
+	right: 3%;
+	background-color: #fdc828;
 	border-radius: 3px;
-	box-sizing: border-box;
+	color: #383f4e;
+	font-size: 1em;
+	font-family: Helvetica,Arial,sans-serif;
+	line-height: 1.25;
+	padding: 8px 12px;
+	text-align: center;
+	font-weight: 700;
 }
 
-#content {
-
+#subscribe p:hover {
+	background-color: #fdd662;
 }
 
-#main_info {
-
-}
-
-#second_info {
-
-}
-
-#other_info {
-
+#main_section img {
+	width: 100%;
 }
 
 footer {
