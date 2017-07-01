@@ -1,3 +1,18 @@
+@font-face {
+	font-family: "Helvetica Neue Md";
+	src: url('../fonts/HelveticaNeueLTStd-Md.otf');
+}
+
+@font-face {
+	font-family: "Helvetica Neue Lt";
+	src: url('../fonts/HelveticaNeueLTStd-Lt.otf');
+}
+
+@font-face {
+  font-family: "theantiqua";
+  src: url("http://asset.lemde.fr/edito/2.5.0/fonts/theantiquab-w7bold-webfont.woff2") format("woff2"), url("http://asset.lemde.fr/edito/2.5.0/fonts/theantiquab-w7bold-webfont.woff") format("woff");
+}
+
 * {
 	box-sizing: border-box;
 	border: none;
@@ -10,100 +25,110 @@
 header {
 	position: fixed;
 	width: 100%;
-	top: 0;
-	left: 0;
-	padding: 21px;
+	padding: 12px 20px;
 	background-color: #fcfcfd;
 	border-bottom: 1px solid #e8eaee;
 }
 
 #placeholder {
 	position: relative;
-	height: 60px;
-}
-
-/*nav > div {
-	display: inline-flex;
-	background-color: #fcfcfd;
-	width: 100%;
-	border-bottom: 1px solid #e8eaee;
-	padding: 21px;
-	background-color: #fefefd;
-}
-
-nav > div > a {
-	flex: 1 1 auto;
-	padding-top: 1.3em;
-}*/
-
-#nav_left {
-	display: block;
-	position: relative;
-	width: 50%;
-	float: left;
-	text-align: left;
-}
-
-#nav_left img {
-	float: left;
+	height: 3em;
 }
 
 #menu {
-	width: 30px;
+	background-image: url(../img/menu_hamburger.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 1.3em;
+	max-width: 1.5em;
+	height: 2em;
+	float: left;
 }
 
 #logo {
-	width: 110px;
+	background-image: url(../img/logo_le_monde.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 6em;
+	max-width: 7em;
+	height: 2em;
+	float: left;
+	margin-left: 1em;
 }
 
-#nav_right {
+#subscribe {
 	display: block;
 	width: 50%;
+	height: 2em;
 	float: left;
 	text-align: right;
 }
 
-/*#menu {
-	background-image: url(../img/menu_hamburger.svg);
-	background-repeat: no-repeat;
-	background-size: 25px;
-	background-position: left center;
-}
-
-#logo {
-	width: 55px;
-	background-image: url(../img/logo_le_monde.svg);
-	background-repeat: no-repeat;
-	background-position: left center;
-}
-
-#subscribe {
-	width: 70px;
-	position: relative;
-	text-decoration: none;
-	border: 1px solid black;
-}*/
-
-#nav_right p {
+#subscribe p {
 	position: absolute;
-	right: 3%;
+	top: 50%;
+	right: 2%;
+	transform: translate(-3%, -50%);
 	background-color: #fdc828;
 	border-radius: 3px;
 	color: #383f4e;
-	font-size: 1em;
-	font-family: Helvetica,Arial,sans-serif;
+	font-size: 0.78em;
+	font-family: "Helvetica Neue Md", Arial, sans-serif;
 	line-height: 1.25;
-	padding: 8px 12px;
+	padding: 8px 12px 5px 12px;
 	text-align: center;
-	font-weight: 700;
+	font-weight: bolder;
 }
 
 #subscribe p:hover {
 	background-color: #fdd662;
 }
 
-#main_section img {
+main {
+	padding-bottom: 1em;
+	border-bottom: 1px solid #e8eaee;
+}
+
+#main_section {
+	width: 85%;
+	margin: 0 auto;
+}
+
+main img {
 	width: 100%;
+	overflow: hidden;
+}
+
+h4 {
+	font-family: "Helvetica Neue Lt", Arial, sans-serif;
+	font-size: .5em;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	color: #8b92a1;
+}
+
+h2 {
+	font-family: "theantiqua", georgia, serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	color: #383f4e;
+	line-height: 1.25;
+}
+
+time {
+	font-family: "HelveticaNeueLTStd-Lt", Arial, sans-serif;
+	font-size: .9em;
+	color: #bdc1c8;
+	line-height: 1.1;
+}
+
+#main_section > p {
+	font-family: "Time New Roman", georgia, serif;
+	font-size: .75em;
+	font-weight: normal;
+	color: #222;
+	line-height: 1.35;
+	padding-top: 0.2em;
 }
 
 footer {
