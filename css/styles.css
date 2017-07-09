@@ -84,14 +84,11 @@ header {
 	background-color: #fdd662;
 }
 
-main {
-	padding-bottom: 1em;
-	border-bottom: 1px solid #e8eaee;
-}
-
 #main_section {
 	width: 85%;
 	margin: 0 auto;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #e8eaee;
 }
 
 main img {
@@ -115,14 +112,22 @@ h2 {
 	line-height: 1.25;
 }
 
+h3 {
+	font-family: "theantiqua", georgia, serif;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: #383f4e;
+	line-height: 1.25;
+}
+
 time {
-	font-family: "HelveticaNeueLTStd-Lt", Arial, sans-serif;
+	font-family: "Helvetica Neue Lt", Arial, sans-serif;
 	font-size: .9em;
 	color: #bdc1c8;
 	line-height: 1.1;
 }
 
-#main_section > p {
+#main_section > p, .article_txt > p {
 	font-family: "Time New Roman", georgia, serif;
 	font-size: .75em;
 	font-weight: normal;
@@ -131,6 +136,73 @@ time {
 	padding-top: 0.2em;
 }
 
+.article {
+	margin-top: 2em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #e8eaee;
+}
+
+.article:last-child {
+	border: none;
+}
+
+.article_txt {
+	width: 70%;
+	margin-right: 5%;
+	float: left;
+}
+
+.article_img {
+	width: 25%;
+	float: right;
+}
+
+.article_clear {
+	clear: both;
+}
+
+#third_section_bg {
+	background-color: #f5f6f8;
+}
+
+#third_section {
+	font-family: "Helvetica Neue Lt", Arial, sans-serif;
+}
+
+.title {
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	font-size: .75em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-top: 1px solid #e8eaee;
+	border-bottom: 1px solid #e8eaee;
+}
+
+.infos {
+	font-size: .95em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
 footer {
+
+}
+
+@media (min-width: 768px) {
+
+	#logo {
+		width: 10em;
+		max-width: 12em;
+	}
+
+	#first_section, #second_section, #third_section {
+		width: 45%;
+		margin: 0 auto;
+	}
+
+	#main_section {
+		width: 100%;
+	}
 
 }
