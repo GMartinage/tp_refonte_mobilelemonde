@@ -274,3 +274,32 @@ time {
 	}
 
 }
+
+@media (max-width: 768px) {
+
+	#first_section, .article, #third_section {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#main_section {
+		width: 100%;
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	.article, #third_section {
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	#see_more > a {
+		width: 100%;
+	}
+
+	#footer_2 {
+		padding-left: 1.5em;
+	}
+
+}
